@@ -20,9 +20,10 @@ Personalized Predictions: Provides customized forecasts for individuals and busi
 User-Friendly Interface: An intuitive platform for easy exploration and decision-making.
 
 # Technologies
-Frontend: HTML, CSS, JavaScript
-Backend: Flask
-Machine Learning: Predictive models for accurate charge estimation
+**Frontend: HTML, CSS, JavaScript**
+**Backend: Flask**
+**Machine Learning: Predictive models for accurate charge estimation**
+
 # Installation
 To get started with the project, follow these steps:
 
