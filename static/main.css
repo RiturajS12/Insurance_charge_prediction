@@ -1,0 +1,480 @@
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Tajawal:wght@200;300;400;500;700;800;900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Tajawal", sans-serif;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+  position: relative;
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
+/* ---------------------------------nav------------------------------------ */
+.nav img{
+  width: 45px;
+  height: 45px;
+}
+.nav {
+  width: 95%;
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem 0;
+  position: fixed;
+  backdrop-filter: blur(10px);
+}
+
+li > a:hover {
+  font-weight: 800;
+}
+
+.nav > ul {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+li > a {
+  color: black;
+  font-weight: 500;
+  font-size: 1.2rem;
+  transition: all 0.2s ease-in-out;
+}
+
+
+
+/* -------------------------Header-------------------------------- */
+.header {
+  height: 100vh;
+  padding-top: 5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.header > h1 {
+  font-size: 5rem;
+  transition: font-size 0.3s ease;
+}
+
+.header > h1:hover {
+  font-size: 9rem;
+}
+
+.button {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 15px;
+  gap: 15px;
+  background-color: #000;
+  outline: 3px #000 solid;
+  outline-offset: -3px;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.4s ease;
+}
+
+.button .text {
+  color: white;
+  font-weight: 700;
+  font-size: 1em;
+  transition: color 0.4s ease;
+}
+
+.button svg path {
+  transition: fill 0.4s ease;
+}
+
+.button:hover {
+  background-color: transparent;
+}
+
+.button:hover .text {
+  color: #000;
+}
+
+.button:hover svg path {
+  fill: #000;
+}
+
+.description {
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translate(-50%, 10px);
+  text-align: center;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s ease, visibility 0.3s ease;
+  background: rgba(0, 0, 0, 0.7);
+  color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  white-space: nowrap;
+}
+
+.button:hover .description {
+  opacity: 1;
+  visibility: visible;
+}
+
+
+/* ------------------------About------------------------------------ */
+
+.about {
+  height: 100vh;
+  padding-top: 4rem;
+}
+.about > h2 {
+  font-size: 3rem;
+  text-align: center;
+}
+.about > h2:hover {
+  font-size: 4rem;
+  text-align: center;
+}
+.about_box {
+  padding-top: 2rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.about_box > .desc {
+  padding: 2rem;
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+
+.about_box > .image {
+  width: 100%;
+  padding: 2rem;
+  font-size: 1.2rem;
+  font-weight: 500;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.about_box > .image:hover{
+  padding: 1em;
+  box-shadow: 10px 10px 20px tomato;
+}
+
+img {
+  width: 25rem;
+  border-radius: 24px;
+}
+
+.contact {
+  height: auto;
+  padding-top: 4rem;
+}
+
+.contact > h2 {
+  font-size: 3rem;
+  text-align: center;
+}
+.contact > h2:hover {
+  font-size: 4rem;
+  text-align: center;
+}
+
+.socails {
+  width: 100%;
+  height: 50vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5em;
+}
+
+.up {
+  display: flex;
+  flex-direction: row;
+  gap: 0.5em;
+}
+
+.down {
+  display: flex;
+  flex-direction: row;
+  gap: 0.5em;
+}
+
+.card1 {
+  width: 90px;
+  height: 90px;
+  outline: none;
+  border: none;
+  background: white;
+  border-radius: 90px 5px 5px 5px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px,
+    rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+  transition: 0.2s ease-in-out;
+}
+
+.instagram {
+  margin-top: 1.5em;
+  margin-left: 1.2em;
+  fill: #cc39a4;
+}
+
+.card2 {
+  width: 90px;
+  height: 90px;
+  outline: none;
+  border: none;
+  background: white;
+  border-radius: 5px 90px 5px 5px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px,
+    rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+  transition: 0.2s ease-in-out;
+}
+
+.twitter {
+  margin-top: 1.5em;
+  margin-left: -0.9em;
+  fill: #03a9f4;
+}
+
+.card3 {
+  width: 90px;
+  height: 90px;
+  outline: none;
+  border: none;
+  background: white;
+  border-radius: 5px 5px 5px 90px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px,
+    rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+  transition: 0.2s ease-in-out;
+}
+
+.github {
+  margin-top: -0.6em;
+  margin-left: 1.2em;
+}
+
+.card4 {
+  width: 90px;
+  height: 90px;
+  outline: none;
+  border: none;
+  background: white;
+  border-radius: 5px 5px 90px 5px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px,
+    rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+  transition: 0.2s ease-in-out;
+}
+
+.discord {
+  margin-top: -0.9em;
+  margin-left: -1.2em;
+  fill: #8c9eff;
+}
+
+.card1:hover {
+  cursor: pointer;
+  scale: 1.1;
+  background-color: #cc39a4;
+}
+
+.card1:hover .instagram {
+  fill: white;
+}
+
+.card2:hover {
+  cursor: pointer;
+  scale: 1.1;
+  background-color: #03a9f4;
+}
+
+.card2:hover .twitter {
+  fill: white;
+}
+
+.card3:hover {
+  cursor: pointer;
+  scale: 1.1;
+  background-color: black;
+}
+
+.card3:hover .github {
+  fill: white;
+}
+
+.card4:hover {
+  cursor: pointer;
+  scale: 1.1;
+  background-color: #8c9eff;
+}
+
+.card4:hover .discord {
+  fill: white;
+}
+
+
+/* -----------------form------------------------- */
+
+.form{
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  
+}
+
+form{
+  box-shadow: 0px 0px 2px 1px #5c5b5b;
+  padding: 2rem;
+  border-radius: 14px;
+  margin-top: 1rem;
+}
+.input{
+  padding: 0.5rem;
+  border-radius: 8px;
+  width: 20rem;
+  margin-top: 0.5rem;
+}
+
+input:focus-visible{
+  outline: none;
+}
+
+
+
+.choice{
+  display: flex;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+
+/* -------------------------Responsive ------------------------------ */
+
+@media screen and (max-width: 900px) {
+  .header > h1 {
+    font-size: 4rem;
+  }
+
+  .header > a {
+    margin-top: 2rem;
+    font-size: 1.5rem;
+    background: #000;
+    color: #fff;
+    border-radius: 14px;
+    padding: 8px 12px;
+  }
+
+  .about {
+    min-height: 100vh;
+    height: auto;
+    padding-top: 4rem;
+  }
+
+  img {
+    width: 20rem;
+    border-radius: 24px;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .header > h1 {
+    font-size: 3rem;
+  }
+
+  .header > a {
+    margin-top: 2rem;
+    font-size: 1.5rem;
+    background: #000;
+    color: #fff;
+    border-radius: 14px;
+    padding: 8px 12px;
+  }
+
+  .about_box {
+    padding-top: 2rem;
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+}
+
+@media screen and (max-width: 520px) {
+
+  .nav > ul {
+    display: grid;
+    align-items: center;
+    gap: 0.5rem;
+    text-align: right;
+  }
+
+  .nav {
+    width: 85%;
+    
+  }
+
+  .header > h1 {
+    font-size: 2.5rem;
+    text-align: center;
+  }
+
+  .header > a {
+    margin-top: 2rem;
+    font-size: 1.5rem;
+    background: #000;
+    color: #fff;
+    border-radius: 14px;
+    padding: 8px 12px;
+  }
+
+  .about > h2 {
+    font-size: 2.5rem;
+    text-align: center;
+  }
+
+  .about_box > .desc {
+    padding: 0.1rem;
+    font-size: 1rem;
+    font-weight: 500;
+  }
+
+  .about_box > .image {
+    width: 100%;
+    padding: 1rem 0;
+    font-size: 0.8rem;
+    font-weight: 500;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  img {
+    width: 15rem;
+    border-radius: 24px;
+  }
+
+  .contact > h2 {
+    font-size: 2.5rem;
+    text-align: center;
+  }
+}
