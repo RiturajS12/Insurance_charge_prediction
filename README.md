@@ -2,13 +2,13 @@
 Welcome to the Insurance Charge Prediction Platform repository! This project is designed to help users forecast their insurance charges using advanced data analytics and machine learning techniques.
 
 ## Table of Contents
-Introduction
-Features
-Technologies
-Installation
-Usage
-Contributing
-Acknowledgements
+Introduction,
+Features,
+Technologies,
+Installation,
+Usage,
+Contributing,
+Acknowledgements,
 License
 
 ## Introduction
@@ -20,8 +20,8 @@ Personalized Predictions: Provides customized forecasts for individuals and busi
 User-Friendly Interface: An intuitive platform for easy exploration and decision-making.
 
 # Technologies
-**Frontend: HTML, CSS, JavaScript**
-**Backend: Flask**
+**Frontend: HTML, CSS, JavaScript**,
+**Backend: Flask**,
 **Machine Learning: Predictive models for accurate charge estimation**
 
 # Installation
